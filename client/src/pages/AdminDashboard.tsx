@@ -16,6 +16,8 @@ import {
   LogOut,
   Loader2,
   Mail,
+  Eye,
+  EyeOff,
   Calendar,
   Search,
   Download,
@@ -37,6 +39,7 @@ export default function AdminDashboard() {
   // Login form state
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [loginLoading, setLoginLoading] = useState(false);
 
   // Data state
@@ -237,20 +240,31 @@ export default function AdminDashboard() {
               >
                 Password
               </label>
-              <input
-                type="password"
-                value={loginPassword}
-                onChange={(e) => setLoginPassword(e.target.value)}
-                placeholder="Enter your password"
-                className="w-full px-4 py-3 text-sm font-body focus:outline-none transition-all duration-200"
-                style={{
-                  background: "oklch(0.96 0.015 60)",
-                  border: "1px solid oklch(0.88 0.02 55)",
-                  color: "oklch(0.20 0.03 40)",
-                }}
-                required
-                disabled={loginLoading}
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  placeholder="Enter your password"
+                  className="w-full px-4 py-3 pr-11 text-sm font-body focus:outline-none transition-all duration-200"
+                  style={{
+                    background: "oklch(0.96 0.015 60)",
+                    border: "1px solid oklch(0.88 0.02 55)",
+                    color: "oklch(0.20 0.03 40)",
+                  }}
+                  required
+                  disabled={loginLoading}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors duration-200"
+                  style={{ color: "oklch(0.50 0.03 40)" }}
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
 
             {authError && (
