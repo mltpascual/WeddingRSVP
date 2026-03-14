@@ -140,23 +140,14 @@ export default function RSVPSection() {
             </div>
           ) : (
             <div className="envelope-container p-8 md:p-12">
-              {/* Wax seal accent */}
+              {/* Monogram accent */}
               <div className="flex justify-center mb-8">
-                <div className="wax-seal">
-                  <svg width="72" height="72" viewBox="0 0 48 48" fill="none">
-                    <circle cx="24" cy="24" r="20" fill="oklch(0.62 0.1 20 / 0.12)" stroke="oklch(0.62 0.1 20 / 0.25)" strokeWidth="0.5" />
-                    <text
-                      x="24"
-                      y="28"
-                      textAnchor="middle"
-                      fill="oklch(0.62 0.1 20 / 0.5)"
-                      fontSize="14"
-                      fontFamily="Great Vibes, cursive"
-                    >
-                      J&amp;L
-                    </text>
-                  </svg>
-                </div>
+                <p
+                  className="font-script text-3xl"
+                  style={{ color: "oklch(0.62 0.1 20 / 0.4)" }}
+                >
+                  J&amp;L
+                </p>
               </div>
 
               {/* 1-to-1 Notice */}
