@@ -60,3 +60,7 @@ service cloud.firestore {
 3. Set **Framework Preset** to **Vite**
 4. Add all environment variables listed above
 5. Deploy!
+
+## Admin Dashboard
+
+Access the admin dashboard at `/admin` to view and manage RSVP submissions.
