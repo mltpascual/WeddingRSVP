@@ -7,7 +7,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Gift } from "lucide-react";
 
-const GCASH_QR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/Gcash_6bfbd079.jpeg";
+const GCASH_QR = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/Gcash_6bfbd079.jpeg";
 
 export default function GiftGuideSection() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);

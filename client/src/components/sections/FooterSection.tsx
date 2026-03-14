@@ -6,7 +6,7 @@
 
 import { MapPin } from "lucide-react";
 
-const BOTANICAL_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/footer-botanical-transparent_8aa08f5c.png";
+const BOTANICAL_IMG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/footer-botanical-transparent_8aa08f5c.png";
 
 export default function FooterSection() {
   return (

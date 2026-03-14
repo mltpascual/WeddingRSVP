@@ -9,7 +9,7 @@
 import { useCountdown } from "@/hooks/useCountdown";
 import { useEffect, useState } from "react";
 
-const COUPLE_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/IMG_1676_bff14813.jpg";
+const COUPLE_BG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1676_bff14813.jpg";
 
 const WEDDING_DATE = new Date("2027-01-24T14:00:00+08:00");
 

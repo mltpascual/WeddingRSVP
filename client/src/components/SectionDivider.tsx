@@ -6,7 +6,7 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const DIVIDER_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/botanical-divider-ixiNhYPFsAbJhAhQg6gord.webp";
+const DIVIDER_URL = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/botanical-divider-ixiNhYPFsAbJhAhQg6gord.webp";
 
 type DividerVariant = "gold-hairline" | "botanical" | "ornament" | "space" | "dot";
 

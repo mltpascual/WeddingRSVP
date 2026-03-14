@@ -9,10 +9,10 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { MapPin, Navigation } from "lucide-react";
 
-const TIMELINE_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/timeline-bg-JM6k7LgqNytd4HLWHCrXFL.webp";
-const VENUE_MAIN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_main_gen-48nwmmqiCGNbjz7x7QHo57.webp";
-const VENUE_NIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_night_gen-XFzV4YD3MnyGAaxRprdteH.webp";
-const VENUE_ENTRANCE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_entrance_gen-SCgddQw8fet4MwKJmN29kb.webp";
+const TIMELINE_BG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/timeline-bg-JM6k7LgqNytd4HLWHCrXFL.webp";
+const VENUE_MAIN = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/venue_main_gen-48nwmmqiCGNbjz7x7QHo57.webp";
+const VENUE_NIGHT = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/venue_night_gen-XFzV4YD3MnyGAaxRprdteH.webp";
+const VENUE_ENTRANCE = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/venue_entrance_gen-SCgddQw8fet4MwKJmN29kb.webp";
 
 /* Azienda Verde Alfonso coordinates — Del Pilar St., Poblacion 5, Alfonso, Cavite */
 const VENUE_COORDS = { lat: 14.1380, lng: 120.8554 };
