@@ -89,24 +89,24 @@ export default function HeroSection() {
 
       {/* ===== BOTTOM — Date, venue & Countdown ===== */}
       <div className="relative z-10 flex flex-col items-center text-center pb-10 md:pb-14 px-4">
-        {/* Date & venue — stronger shadows */}
+        {/* Date & venue — original font style with stronger shadows */}
         <div
           className="animate-fade-in mb-8"
           style={{ animationDelay: "1.2s", animationDuration: "1s", animationFillMode: "both" }}
         >
           <p
-            className="font-display text-xl md:text-2xl tracking-[0.12em] font-medium"
+            className="font-display text-lg md:text-2xl tracking-[0.12em] font-light"
             style={{
-              color: "oklch(0.98 0.01 55)",
+              color: "oklch(0.96 0.01 55)",
               textShadow: "0 1px 4px oklch(0.05 0.02 40 / 1), 0 2px 12px oklch(0.05 0.02 40 / 0.8), 0 0 30px oklch(0.05 0.02 40 / 0.5)",
             }}
           >
             Sunday, January 24, 2027
           </p>
           <p
-            className="font-body text-sm md:text-base mt-2 tracking-[0.15em] uppercase font-medium"
+            className="font-body text-xs md:text-sm mt-2 tracking-[0.15em] uppercase"
             style={{
-              color: "oklch(0.95 0.01 55)",
+              color: "oklch(0.90 0.01 55)",
               textShadow: "0 1px 4px oklch(0.05 0.02 40 / 1), 0 2px 10px oklch(0.05 0.02 40 / 0.8), 0 0 24px oklch(0.05 0.02 40 / 0.4)",
             }}
           >
@@ -114,7 +114,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* Countdown — solid colored boxes like the peg */}
+        {/* Countdown — solid boxes matching site theme (dusty rose / rose-cream) */}
         <div
           className="grid grid-cols-4 gap-3 md:gap-5 animate-scale-in"
           style={{ animationDelay: "1.6s", animationFillMode: "both" }}
@@ -126,13 +126,12 @@ export default function HeroSection() {
             { value: countdown.seconds, label: "Seconds" },
           ].map((item) => (
             <div key={item.label} className="flex flex-col items-center">
-              {/* Solid box for the number */}
+              {/* Solid box — dusty rose matching site primary color */}
               <div
                 className="w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center"
                 style={{
-                  background: "oklch(0.40 0.12 20 / 0.85)",
-                  backdropFilter: "blur(4px)",
-                  boxShadow: "0 4px 16px oklch(0.1 0.05 20 / 0.4)",
+                  background: "oklch(0.62 0.1 20 / 0.88)",
+                  boxShadow: "0 4px 16px oklch(0.1 0.05 20 / 0.3)",
                 }}
               >
                 <span
