@@ -7,7 +7,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
-const MUSIC_URL = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/BgMusic_8d65e310.mp3";
+const MUSIC_URL = "/images/BgMusic_8d65e310.mp3";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);

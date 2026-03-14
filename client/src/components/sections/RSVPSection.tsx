@@ -12,7 +12,7 @@ import { toast } from "sonner";
 import { Heart, Loader2 } from "lucide-react";
 import { submitRsvp } from "@/lib/rsvpService";
 
-const RSVP_BG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/rsvp-bg-KgZZFYAFweYtDdNF2iyNyo.webp";
+const RSVP_BG = "/images/rsvp-bg-KgZZFYAFweYtDdNF2iyNyo.webp";
 
 export default function RSVPSection() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);

@@ -11,47 +11,47 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const photos = [
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61657264_Unknown_a519aed7.jpeg",
+    src: "/images/61657264_Unknown_a519aed7.jpeg",
     alt: "Joshua and Loela walking by the fountain",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1676_bff14813.jpg",
+    src: "/images/IMG_1676_bff14813.jpg",
     alt: "In the forest together",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_3985_c8d35cdd.jpg",
+    src: "/images/IMG_3985_c8d35cdd.jpg",
     alt: "Intimate kiss through the veil",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61654224_Unknown_430750b5.jpeg",
+    src: "/images/61654224_Unknown_430750b5.jpeg",
     alt: "Loela in white dress",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/fqs-couple_663df430.jpg",
+    src: "/images/fqs-couple_663df430.jpg",
     alt: "Romantic kiss behind the bouquet",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1809_d67479ad.jpg",
+    src: "/images/IMG_1809_d67479ad.jpg",
     alt: "Running on the beach",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61653312_Unknown_6d2ed6de.jpeg",
+    src: "/images/61653312_Unknown_6d2ed6de.jpeg",
     alt: "Couple with bouquet of calla lilies",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1811_e0f78fe2.jpg",
+    src: "/images/IMG_1811_e0f78fe2.jpg",
     alt: "Walking on the lake beach",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61646912_Unknown_e666cfcd.jpeg",
+    src: "/images/61646912_Unknown_e666cfcd.jpeg",
     alt: "Holding hands",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1828_36607621.jpg",
+    src: "/images/IMG_1828_36607621.jpg",
     alt: "Together outdoors",
   },
   {
-    src: "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1792_0c6d26ce.jpg",
+    src: "/images/IMG_1792_0c6d26ce.jpg",
     alt: "Beautiful moment",
   },
 ];

@@ -7,9 +7,9 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const PHOTO_COUPLE = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61657264_Unknown_a519aed7.jpeg";
-const PHOTO_HANDS = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61646912_Unknown_e666cfcd.jpeg";
-const PHOTO_BRIDE = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/61654224_Unknown_430750b5.jpeg";
+const PHOTO_COUPLE = "/images/61657264_Unknown_a519aed7.jpeg";
+const PHOTO_HANDS = "/images/61646912_Unknown_e666cfcd.jpeg";
+const PHOTO_BRIDE = "/images/61654224_Unknown_430750b5.jpeg";
 
 export default function OurStorySection() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.2);

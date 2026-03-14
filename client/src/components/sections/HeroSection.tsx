@@ -7,7 +7,7 @@
 
 import { useCountdown } from "@/hooks/useCountdown";
 
-const COUPLE_BG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1676_bff14813.jpg";
+const COUPLE_BG = "/images/IMG_1676_bff14813.jpg";
 
 const WEDDING_DATE = new Date("2027-01-24T14:00:00+08:00");
 

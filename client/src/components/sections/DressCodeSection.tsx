@@ -6,10 +6,10 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const NINANG_IMG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/dresscode-ninang-v2-AGVz6HXFv79xQkePMf76ZX.webp";
-const NINONG_IMG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/dresscode-ninong-v2-UNFAJCSKZ4GznKmLg2C45d.webp";
-const GUEST_FEMALE_IMG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/dresscode-guest-lady-v2-9iFkgk3FpeqaTbfyrkpq2s.webp";
-const GUEST_MALE_IMG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/dresscode-guest-gent-v4-transparent_6ada6479.png";
+const NINANG_IMG = "/images/dresscode-ninang-v2-AGVz6HXFv79xQkePMf76ZX.webp";
+const NINONG_IMG = "/images/dresscode-ninong-v2-UNFAJCSKZ4GznKmLg2C45d.webp";
+const GUEST_FEMALE_IMG = "/images/dresscode-guest-lady-v2-9iFkgk3FpeqaTbfyrkpq2s.webp";
+const GUEST_MALE_IMG = "/images/dresscode-guest-gent-v4-transparent_6ada6479.webp";
 
 const colorGuide = [
   { color: "#F2C94C", name: "Yellow" },
