@@ -19,13 +19,13 @@ export default function FooterSection() {
         <img
           src={BOTANICAL_IMG}
           alt=""
-          className="w-[22rem] md:w-[38rem] lg:w-[44rem] h-auto mx-auto mb-12"
+          className="w-[16rem] md:w-[38rem] lg:w-[44rem] h-auto mx-auto mb-10 md:mb-12"
           loading="lazy"
         />
 
         {/* Large-scale couple names — editorial closing */}
         <p
-          className="font-script text-5xl md:text-7xl mb-2"
+          className="font-script text-4xl md:text-7xl mb-2"
           style={{ color: "oklch(0.62 0.1 20)" }}
         >
           Joshua & Loela

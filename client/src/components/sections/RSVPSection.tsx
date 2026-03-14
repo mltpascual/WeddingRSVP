@@ -10,7 +10,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useState } from "react";
 import { toast } from "sonner";
 import { Heart, Loader2 } from "lucide-react";
-import { trpc } from "@/lib/trpc";
+import { submitRsvp } from "@/lib/rsvpService";
 
 const RSVP_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/rsvp-bg-KgZZFYAFweYtDdNF2iyNyo.webp";
 
@@ -24,29 +24,29 @@ export default function RSVPSection() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isPending, setIsPending] = useState(false);
 
-  const submitRsvp = trpc.rsvp.submit.useMutation({
-    onSuccess: () => {
-      setSubmitted(true);
-      toast.success("Thank you for your RSVP! We look forward to celebrating with you.");
-    },
-    onError: (error) => {
-      toast.error(error.message || "Something went wrong. Please try again.");
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.attending) {
       toast.error("Please fill in your name and attendance.");
       return;
     }
-    submitRsvp.mutate({
-      name: formData.name,
-      email: formData.email || "",
-      attending: formData.attending as "yes" | "no",
-      message: formData.message || "",
-    });
+    setIsPending(true);
+    try {
+      await submitRsvp({
+        name: formData.name,
+        email: formData.email || "",
+        attending: formData.attending as "yes" | "no",
+        message: formData.message || "",
+      });
+      setSubmitted(true);
+      toast.success("Thank you for your RSVP! We look forward to celebrating with you.");
+    } catch (error: any) {
+      toast.error(error.message || "Something went wrong. Please try again.");
+    } finally {
+      setIsPending(false);
+    }
   };
 
   const inputStyle = {
@@ -193,7 +193,7 @@ export default function RSVPSection() {
                     className="w-full px-4 py-3 text-sm focus:outline-none transition-all duration-300"
                     style={inputStyle}
                     required
-                    disabled={submitRsvp.isPending}
+                    disabled={isPending}
                   />
                 </div>
 
@@ -212,7 +212,7 @@ export default function RSVPSection() {
                     placeholder="your@email.com"
                     className="w-full px-4 py-3 text-sm focus:outline-none transition-all duration-300"
                     style={inputStyle}
-                    disabled={submitRsvp.isPending}
+                    disabled={isPending}
                   />
                 </div>
 
@@ -233,7 +233,7 @@ export default function RSVPSection() {
                         key={option.value}
                         type="button"
                         onClick={() => setFormData({ ...formData, attending: option.value })}
-                        className="py-3 px-4 font-display text-xs tracking-[0.12em] uppercase transition-all duration-300"
+                        className="py-3 px-2 md:px-4 font-display text-[10px] md:text-xs tracking-[0.08em] md:tracking-[0.12em] uppercase transition-all duration-300"
                         style={{
                           background: formData.attending === option.value
                             ? "oklch(0.62 0.1 20)"
@@ -247,7 +247,7 @@ export default function RSVPSection() {
                               : "oklch(0.85 0.02 55)"
                           }`,
                         }}
-                        disabled={submitRsvp.isPending}
+                        disabled={isPending}
                       >
                         {option.label}
                       </button>
@@ -270,7 +270,7 @@ export default function RSVPSection() {
                     rows={3}
                     className="w-full px-4 py-3 text-sm focus:outline-none transition-all duration-300 resize-none"
                     style={inputStyle}
-                    disabled={submitRsvp.isPending}
+                    disabled={isPending}
                   />
                 </div>
 
@@ -278,14 +278,14 @@ export default function RSVPSection() {
                 <div className="text-center pt-2">
                   <button
                     type="submit"
-                    disabled={submitRsvp.isPending}
+                    disabled={isPending}
                     className="w-full py-3.5 font-display text-[12px] tracking-[0.25em] uppercase transition-all duration-300 hover:shadow-lg disabled:opacity-60"
                     style={{
                       background: "oklch(0.62 0.1 20)",
                       color: "oklch(0.98 0.005 55)",
                     }}
                   >
-                    {submitRsvp.isPending ? (
+                    {isPending ? (
                       <span className="flex items-center justify-center gap-2">
                         <Loader2 size={14} className="animate-spin" />
                         Sending...

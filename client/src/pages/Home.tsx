@@ -19,13 +19,8 @@ import GiftGuideSection from "@/components/sections/GiftGuideSection";
 import SnapShareSection from "@/components/sections/SnapShareSection";
 import FAQSection from "@/components/sections/FAQSection";
 import FooterSection from "@/components/sections/FooterSection";
-import { useAuth } from "@/_core/hooks/useAuth";
 
 export default function Home() {
-  // The useAuth hook provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  const { user, loading, error, isAuthenticated, logout } = useAuth();
-
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navigation />

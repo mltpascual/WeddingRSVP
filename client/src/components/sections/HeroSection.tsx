@@ -121,7 +121,7 @@ export default function HeroSection() {
 
         {/* Countdown */}
         <div
-          className="grid grid-cols-4 gap-6 md:gap-12 animate-scale-in"
+          className="grid grid-cols-4 gap-3 md:gap-12 animate-scale-in"
           style={{ animationDelay: "1.6s", animationFillMode: "both" }}
         >
           {[

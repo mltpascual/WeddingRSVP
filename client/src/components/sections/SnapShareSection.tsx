@@ -59,7 +59,7 @@ export default function SnapShareSection() {
         >
           <button
             onClick={copyHashtag}
-            className="relative inline-block px-10 py-6 transition-all duration-300 hover:shadow-md group"
+            className="relative inline-block px-6 md:px-10 py-5 md:py-6 transition-all duration-300 hover:shadow-md group"
             style={{
               border: "2px solid oklch(0.62 0.1 20 / 0.35)",
               borderRadius: "4px",

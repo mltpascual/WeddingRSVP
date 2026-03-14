@@ -127,7 +127,7 @@ export default function DressCodeSection() {
             >
               (Godmothers)
             </p>
-            <div className="flex justify-center items-center mb-5 h-64 md:h-[22rem]">
+            <div className="flex justify-center items-center mb-5 h-48 md:h-[22rem]">
               <img
                 src={NINANG_IMG}
                 alt="Ninang dress code — olive green long gown"
@@ -164,7 +164,7 @@ export default function DressCodeSection() {
             >
               (Godfathers)
             </p>
-            <div className="flex justify-center items-center mb-5 h-64 md:h-[22rem]">
+            <div className="flex justify-center items-center mb-5 h-48 md:h-[22rem]">
               <img
                 src={NINONG_IMG}
                 alt="Ninong dress code — black suit with olive green tie"
@@ -207,7 +207,7 @@ export default function DressCodeSection() {
             We kindly request that all guests honor the dress code.
           </p>
 
-          <div className="flex justify-center gap-10 md:gap-20 mb-6">
+          <div className="flex justify-center gap-4 md:gap-20 mb-6">
             <div
               className="text-center"
               style={{
@@ -216,7 +216,7 @@ export default function DressCodeSection() {
                 transition: "all 0.8s ease 300ms",
               }}
             >
-              <div className="flex justify-center items-center h-56 md:h-[20rem] mb-4">
+              <div className="flex justify-center items-center h-40 md:h-[20rem] mb-4">
                 <img
                   src={GUEST_FEMALE_IMG}
                   alt="Ladies — modern & chic long gown"
@@ -239,7 +239,7 @@ export default function DressCodeSection() {
                 transition: "all 0.8s ease 500ms",
               }}
             >
-              <div className="flex justify-center items-center h-56 md:h-[20rem] mb-4">
+              <div className="flex justify-center items-center h-40 md:h-[20rem] mb-4">
                 <img
                   src={GUEST_MALE_IMG}
                   alt="Gentlemen — long sleeves, black suit and pants"

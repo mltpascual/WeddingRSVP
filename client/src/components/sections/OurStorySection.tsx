@@ -69,7 +69,7 @@ export default function OurStorySection() {
               <img
                 src={PHOTO_COUPLE}
                 alt="Joshua and Loela by the fountain"
-                className="w-full h-[420px] md:h-[600px] object-cover object-top transition-transform duration-[1.5s] group-hover:scale-[1.02]"
+                className="w-full h-[300px] md:h-[600px] object-cover object-top transition-transform duration-[1.5s] group-hover:scale-[1.02]"
                 loading="eager"
               />
             </div>

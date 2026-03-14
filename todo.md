@@ -1,0 +1,53 @@
+# Project TODO
+
+- [x] Basic homepage layout with all wedding sections
+- [x] Navigation menu (solid color, centered links, bigger font)
+- [x] Hero section with countdown timer
+- [x] Gallery section
+- [x] RSVP form (1-to-1 invitation policy, no plus-ones)
+- [x] Our Story section
+- [x] Entourage section
+- [x] Event Details section with Google Maps embed
+- [x] Dress Code section (equalized illustration sizes)
+- [x] Snap & Share hashtag section
+- [x] Gift Guide section (enhanced design)
+- [x] FAQ section
+- [x] Footer section with botanical watercolor illustration
+- [x] Music player
+- [x] Mobile hamburger menu on the left, logo centered
+- [x] Global font size increased by 2pt
+- [x] Upgrade to full-stack with database
+- [x] RSVP database schema (rsvps table)
+- [x] RSVP API endpoints (submit, list, stats)
+- [x] Connect RSVP form to backend API
+- [x] RSVP tests (12 passing)
+- [x] Push code to mltpascual/WeddingRSVP GitHub repo
+- [ ] Fill in entourage details (Maid of Honor, Best Man, sponsors)
+- [ ] Add background music audio file
+- [x] Admin dashboard page with RSVP stats cards
+- [x] Admin dashboard RSVP responses table
+- [x] Admin dashboard guest messages view
+- [x] Admin route registration and navigation
+- [x] Backend: delete RSVP endpoint (admin only)
+- [x] Backend: update/edit RSVP endpoint (admin only)
+- [x] Frontend: delete RSVP button with confirmation dialog
+- [x] Frontend: edit RSVP modal/inline editing
+- [x] Tests for delete and update RSVP endpoints
+- [x] Darken font colors on admin dashboard for better readability
+- [x] Get venue photos from 3 Google Maps links
+- [x] Add venue photos to Event Details section
+- [x] Generate clean venue image 1: arched glass building with star garden (nano banana)
+- [x] Generate clean venue image 2: night garden with fairy lights (nano banana)
+- [x] Generate clean venue image 3: entrance with signage (nano banana)
+- [x] Replace Google Maps screenshots with generated images
+- [x] Audit all sections in mobile view for non-responsive buttons and layout issues
+- [x] Fix all identified mobile responsiveness issues
+- [x] Install Firebase SDK
+- [x] Create Firebase config with env vars (placeholder)
+- [x] Create Firestore service layer for RSVP CRUD
+- [x] Create Firebase Auth service for admin login
+- [x] Update RSVP form to use Firestore
+- [x] Update Admin Dashboard to use Firestore + Firebase Auth
+- [x] Create admin login page (integrated into AdminDashboard)
+- [x] Clean up unused tRPC/MySQL/Manus server files
+- [ ] Push updated code to GitHub

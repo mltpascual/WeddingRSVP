@@ -12,8 +12,9 @@ import { MapPin, Navigation } from "lucide-react";
 import { MapView } from "@/components/Map";
 
 const TIMELINE_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/timeline-bg-JM6k7LgqNytd4HLWHCrXFL.webp";
-const VENUE_GARDEN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue-garden_c2a683d5.jpg";
-const VENUE_INTERIOR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue-interior_c66bdb02.jpg";
+const VENUE_MAIN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_main_gen-48nwmmqiCGNbjz7x7QHo57.webp";
+const VENUE_NIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_night_gen-XFzV4YD3MnyGAaxRprdteH.webp";
+const VENUE_ENTRANCE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_entrance_gen-SCgddQw8fet4MwKJmN29kb.webp";
 
 /* Azienda Verde Alfonso coordinates — Del Pilar St., Poblacion 5, Alfonso, Cavite */
 const VENUE_COORDS = { lat: 14.1380, lng: 120.8554 };
@@ -274,40 +275,56 @@ export default function EventDetailsSection() {
           }`}
         >
           {/* Left: Venue photos — stacked with offset */}
-          <div className="relative h-[320px] md:h-[400px]">
-            {/* Main venue photo — garden ceremony */}
+          <div className="relative h-[280px] md:h-[460px]">
+
+            {/* Photo 1: Main venue — arched glass building with garden */}
             <div
-              className="absolute top-0 left-0 w-[75%] h-[75%] overflow-hidden shadow-lg transition-transform duration-700 hover:scale-[1.02]"
+              className="absolute top-0 left-0 w-[68%] h-[58%] overflow-hidden shadow-lg transition-transform duration-700 hover:scale-[1.02] z-[2]"
               style={{
                 border: "3px solid oklch(0.98 0.01 55)",
                 boxShadow: "0 8px 30px oklch(0.35 0.04 40 / 0.12)",
               }}
             >
               <img
-                src={VENUE_GARDEN}
-                alt="Azienda Verde Alfonso — Garden ceremony setup"
+                src={VENUE_MAIN}
+                alt="Azienda Verde Alfonso — Main venue with arched glass structure and star-shaped garden"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
-            {/* Secondary venue photo — interior reception */}
+            {/* Photo 2: Night view — garden lit up */}
             <div
-              className="absolute bottom-0 right-0 w-[65%] h-[65%] overflow-hidden shadow-lg transition-transform duration-700 hover:scale-[1.02]"
+              className="absolute bottom-0 right-0 w-[60%] h-[50%] overflow-hidden shadow-lg transition-transform duration-700 hover:scale-[1.02] z-[3]"
               style={{
                 border: "3px solid oklch(0.98 0.01 55)",
                 boxShadow: "0 8px 30px oklch(0.35 0.04 40 / 0.12)",
               }}
             >
               <img
-                src={VENUE_INTERIOR}
-                alt="Azienda Verde Alfonso — Reception hall interior"
+                src={VENUE_NIGHT}
+                alt="Azienda Verde Alfonso — Night view with garden and fairy lights"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            {/* Photo 3: Entrance with signage */}
+            <div
+              className="absolute bottom-[15%] left-[5%] w-[35%] h-[38%] overflow-hidden shadow-lg transition-transform duration-700 hover:scale-[1.02] z-[1]"
+              style={{
+                border: "3px solid oklch(0.98 0.01 55)",
+                boxShadow: "0 8px 30px oklch(0.35 0.04 40 / 0.12)",
+              }}
+            >
+              <img
+                src={VENUE_ENTRANCE}
+                alt="Azienda Verde Alfonso — Entrance with venue signage"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
             {/* Gold decorative corner accent */}
             <div
-              className="absolute top-[37%] left-[37%] w-8 h-8"
+              className="absolute top-[28%] left-[34%] w-8 h-8 z-[4]"
               style={{
                 borderLeft: "2px solid oklch(0.75 0.1 85 / 0.5)",
                 borderTop: "2px solid oklch(0.75 0.1 85 / 0.5)",
@@ -368,7 +385,7 @@ export default function EventDetailsSection() {
               href="https://maps.google.com/?q=Azienda+Verde+Alfonso+Cavite"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-display text-[11px] tracking-[0.18em] uppercase py-2.5 px-6 transition-all duration-300 hover:shadow-md"
+              className="inline-flex items-center gap-2 font-display text-[10px] md:text-[11px] tracking-[0.12em] md:tracking-[0.18em] uppercase py-2.5 px-4 md:px-6 transition-all duration-300 hover:shadow-md"
               style={{
                 background: "oklch(0.62 0.1 20)",
                 color: "oklch(0.98 0.005 55)",
