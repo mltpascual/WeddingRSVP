@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, oklch(0.1 0.02 40 / 0.15) 0%, transparent 30%, transparent 45%, oklch(0.1 0.02 40 / 0.55) 70%, oklch(0.1 0.02 40 / 0.75) 100%)",
+          background: "linear-gradient(to bottom, oklch(0.1 0.02 40 / 0.08) 0%, transparent 30%, transparent 50%, oklch(0.1 0.02 40 / 0.3) 75%, oklch(0.1 0.02 40 / 0.5) 100%)",
         }}
       />
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
             color: "oklch(0.98 0.01 55)",
             animationDelay: "0.3s",
             animationFillMode: "both",
-            textShadow: "0 1px 6px oklch(0.05 0.02 40 / 0.9), 0 0 20px oklch(0.05 0.02 40 / 0.6), 0 0 40px oklch(0.05 0.02 40 / 0.3)",
+            textShadow: "0 1px 6px oklch(0.05 0.02 40 / 0.6), 0 0 16px oklch(0.05 0.02 40 / 0.35)",
           }}
         >
           Together With Our Families
@@ -58,7 +58,7 @@ export default function HeroSection() {
             className="font-script text-6xl md:text-8xl leading-tight"
             style={{
               color: "oklch(0.98 0.01 55)",
-              textShadow: "0 2px 8px oklch(0.05 0.02 40 / 0.9), 0 0 30px oklch(0.05 0.02 40 / 0.5), 0 0 60px oklch(0.05 0.02 40 / 0.3)",
+              textShadow: "0 2px 8px oklch(0.05 0.02 40 / 0.6), 0 0 24px oklch(0.05 0.02 40 / 0.3)",
             }}
           >
             Joshua
@@ -67,7 +67,7 @@ export default function HeroSection() {
             className="font-display text-xl md:text-2xl tracking-[0.25em] mx-3"
             style={{
               color: "oklch(0.90 0.06 85)",
-              textShadow: "0 1px 6px oklch(0.05 0.02 40 / 0.9), 0 0 20px oklch(0.05 0.02 40 / 0.5)",
+              textShadow: "0 1px 6px oklch(0.05 0.02 40 / 0.6), 0 0 16px oklch(0.05 0.02 40 / 0.3)",
             }}
           >
             &amp;
@@ -76,7 +76,7 @@ export default function HeroSection() {
             className="font-script text-6xl md:text-8xl leading-tight"
             style={{
               color: "oklch(0.98 0.01 55)",
-              textShadow: "0 2px 8px oklch(0.05 0.02 40 / 0.9), 0 0 30px oklch(0.05 0.02 40 / 0.5), 0 0 60px oklch(0.05 0.02 40 / 0.3)",
+              textShadow: "0 2px 8px oklch(0.05 0.02 40 / 0.6), 0 0 24px oklch(0.05 0.02 40 / 0.3)",
             }}
           >
             Loela
@@ -98,16 +98,16 @@ export default function HeroSection() {
             className="font-display text-lg md:text-2xl tracking-[0.12em] font-light"
             style={{
               color: "oklch(0.96 0.01 55)",
-              textShadow: "0 1px 4px oklch(0.05 0.02 40 / 1), 0 2px 12px oklch(0.05 0.02 40 / 0.8), 0 0 30px oklch(0.05 0.02 40 / 0.5)",
+              textShadow: "0 1px 4px oklch(0.05 0.02 40 / 0.7), 0 2px 10px oklch(0.05 0.02 40 / 0.4)",
             }}
           >
-            Sunday, January 24, 2027
+            Sunday, January 24, 2027, 2PM
           </p>
           <p
             className="font-body text-xs md:text-sm mt-2 tracking-[0.15em] uppercase"
             style={{
               color: "oklch(0.90 0.01 55)",
-              textShadow: "0 1px 4px oklch(0.05 0.02 40 / 1), 0 2px 10px oklch(0.05 0.02 40 / 0.8), 0 0 24px oklch(0.05 0.02 40 / 0.4)",
+              textShadow: "0 1px 4px oklch(0.05 0.02 40 / 0.7), 0 2px 10px oklch(0.05 0.02 40 / 0.4)",
             }}
           >
             Azienda Verde Alfonso, Cavite
@@ -145,7 +145,7 @@ export default function HeroSection() {
                 className="font-body text-[9px] md:text-[11px] tracking-[0.3em] uppercase mt-2"
                 style={{
                   color: "oklch(0.95 0.01 55)",
-                  textShadow: "0 1px 4px oklch(0.05 0.02 40 / 1), 0 0 12px oklch(0.05 0.02 40 / 0.6)",
+                  textShadow: "0 1px 4px oklch(0.05 0.02 40 / 0.7), 0 0 10px oklch(0.05 0.02 40 / 0.35)",
                 }}
               >
                 {item.label}
