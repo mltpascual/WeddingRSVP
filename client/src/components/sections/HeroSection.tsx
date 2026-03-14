@@ -128,14 +128,14 @@ export default function HeroSection() {
             <div key={item.label} className="flex flex-col items-center">
               {/* Solid box — dusty rose matching site primary color */}
               <div
-                className="w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center text-center"
                 style={{
                   background: "oklch(0.95 0.025 65 / 0.9)",
                   boxShadow: "0 4px 16px oklch(0.1 0.05 20 / 0.3)",
                 }}
               >
                 <span
-                  className="font-display text-2xl md:text-4xl font-light tabular-nums"
+                  className="font-display text-2xl md:text-4xl font-light tabular-nums leading-none"
                   style={{ color: "oklch(0.35 0.04 40)" }}
                 >
                   {String(item.value).padStart(2, "0")}
