@@ -7,7 +7,7 @@
  */
 
 import { useCountdown } from "@/hooks/useCountdown";
-import { useEffect, useState } from "react";
+
 
 const COUPLE_BG = "https://raw.githubusercontent.com/mltpascual/WeddingRSVP/main/assets/IMG_1676_bff14813.jpg";
 
@@ -15,27 +15,15 @@ const WEDDING_DATE = new Date("2027-01-24T14:00:00+08:00");
 
 export default function HeroSection() {
   const countdown = useCountdown(WEDDING_DATE);
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const parallaxOffset = scrollY * 0.15;
-
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Couple photo as full background */}
+      {/* Couple photo as fixed background — stays in place on scroll */}
       <div
-        className="absolute inset-0"
+        className="fixed inset-0 z-0"
         style={{
           backgroundImage: `url(${COUPLE_BG})`,
           backgroundSize: "cover",
           backgroundPosition: "center 70%",
-          transform: `translateY(${parallaxOffset}px) scale(1.05)`,
-          transition: "transform 0.1s linear",
         }}
       />
 
