@@ -7,9 +7,7 @@
  */
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { useRef } from "react";
 import { MapPin, Navigation } from "lucide-react";
-import { MapView } from "@/components/Map";
 
 const TIMELINE_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/timeline-bg-JM6k7LgqNytd4HLWHCrXFL.webp";
 const VENUE_MAIN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663343684150/SEVRLfZ4zNKQdRddhVWKwh/venue_main_gen-48nwmmqiCGNbjz7x7QHo57.webp";
@@ -88,18 +86,7 @@ export default function EventDetailsSection() {
   const { ref: venueRef, isVisible: venueVisible } = useScrollAnimation(0.1);
   const { ref: timelineRef, isVisible: timelineVisible } = useScrollAnimation(0.1);
   const { ref: mapRef, isVisible: mapVisible } = useScrollAnimation(0.05);
-  const mapInstanceRef = useRef<google.maps.Map | null>(null);
 
-  const handleMapReady = (map: google.maps.Map) => {
-    mapInstanceRef.current = map;
-
-    // Add a marker for Azienda Verde Alfonso
-    new google.maps.marker.AdvancedMarkerElement({
-      map,
-      position: VENUE_COORDS,
-      title: "Azienda Verde Alfonso",
-    });
-  };
 
   return (
     <section
@@ -423,11 +410,14 @@ export default function EventDetailsSection() {
               border: "1px solid oklch(0.88 0.02 55)",
             }}
           >
-            <MapView
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5!2d120.8554!3d14.138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd9ca0e0e0e0e1%3A0xabcdef1234567890!2sAzienda+Verde+Alfonso!5e0!3m2!1sen!2sph"
               className="w-full h-[300px] md:h-[400px]"
-              initialCenter={VENUE_COORDS}
-              initialZoom={15}
-              onMapReady={handleMapReady}
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Azienda Verde Alfonso Map"
             />
           </div>
 
